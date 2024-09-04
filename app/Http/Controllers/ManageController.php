@@ -32,8 +32,9 @@ class ManageController extends Controller
             'message' => 'All records have been deleted!'
         ]);
     }
-    public function emptyElected(){
-        DB::table('officials')->whereIn('status', [1, 2])->truncate();
+    public function emptyElected()
+    {
+        DB::table('officials')->whereIn('position', [1, 2])->delete();
 
         return response()->json([
             'success' => true,
@@ -41,8 +42,9 @@ class ManageController extends Controller
         ]);
     }
 
-    public function emptyAppointed(){
-        DB::table('officials')->whereNotIn('status', [1, 2])->truncate();
+    public function emptyAppointed()
+    {
+        DB::table('officials')->whereNotIn('position', [1, 2])->delete();
 
         return response()->json([
             'success' => true,

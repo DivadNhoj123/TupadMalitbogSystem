@@ -124,7 +124,6 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        @include('admin.partials.scripts.manage-scripts.empty-tupad')
                                     </div>
                                     <div class="col-sm-6 col-lg-4 mb-6">
                                         <div class="card card-border-shadow-primary h-100">
@@ -148,7 +147,6 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        @include('admin.partials.scripts.manage-scripts.empty-elected')
                                     </div>
                                     <div class="col-sm-6 col-lg-4 mb-6">
                                         <div class="card card-border-shadow-primary h-100">
@@ -172,8 +170,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        @include('admin.partials.scripts.manage-scripts.empty-appointed')
                                     </div>
+                                    @include('admin.partials.scripts.manage-scripts.clean-database')
                                 </div>
                             </div>
                         </div>
