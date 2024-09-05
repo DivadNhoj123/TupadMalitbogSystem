@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AppointedController;
+use App\Http\Controllers\ImportController;
 use App\Http\Controllers\ManageController;
 use App\Http\Controllers\OfficialController;
 use App\Http\Controllers\TupadController;
@@ -24,6 +25,8 @@ Route::resource('/manage', ManageController::class);
 Route::get('/emptyTupad', [ManageController::class, 'emptyTupad'])->name('empty-tupad');
 Route::get('/emptyElected', [ManageController::class, 'emptyElected'])->name('empty-elected');
 Route::get('/emptyAppointed', [ManageController::class, 'emptyAppointed'])->name('empty-appointed');
+Route::post('/import-officials', [ImportController::class, 'importElected'])->name('import-officials');
+Route::post('/import-appointed', [ImportController::class, 'importAppointed'])->name('import-appointed');
 
 
 

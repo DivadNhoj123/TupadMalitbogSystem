@@ -10,11 +10,20 @@
                     <div class="card-header">
                         <div class="d-flex align-items-center">
                             <h4 class="card-title">Barangay Officials Record</h4>
-                            <button class="btn btn-success btn-round ms-auto waves-effect waves-light" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScroll"
-                                aria-controls="offcanvasScroll">
-                                <i class="ri-user-add-line ri-16px me-1_5"></i>Add Record
-                            </button>
+
+                            <div class="ms-auto">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary waves-effect" data-bs-toggle="modal"
+                                        data-bs-target="#UploadExcelElected">
+                                        <i class="ri-file-excel-line ri-16px me-1_5"></i>Upload Excel</button>
+                                        @include('admin.partials.modals.upload-elected-excel')
+                                    <button type="button" class="btn btn-success waves-effect" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasScroll" aria-controls="offcanvasScroll"> <i
+                                            class="ri-user-add-line ri-16px me-1_5"></i>Add
+                                        Record
+                                    </button>
+                                </div>
+                            </div>
                             <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
                                 tabindex="-1" id="offcanvasScroll" aria-labelledby="offcanvasScrollLabel">
                                 <div class="offcanvas-header">
