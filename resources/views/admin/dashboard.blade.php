@@ -14,7 +14,7 @@
                                     <span class="avatar-initial rounded bg-label-primary"><i
                                             class="ri-user-search-line ri-24px"></i></span>
                                 </div>
-                                <h4 class="mb-0">{{$new}}</h4>
+                                <h4 class="mb-0">{{ $new }}</h4>
                             </div>
                             <h6 class="mb-0 fw-bold">NEWLY APPLICANT</h6>
 
@@ -29,7 +29,7 @@
                                     <span class="avatar-initial rounded bg-label-warning"><i
                                             class="ri-group-line ri-24px"></i></span>
                                 </div>
-                                <h4 class="mb-0">{{$elected}}</h4>
+                                <h4 class="mb-0">{{ $elected }}</h4>
                             </div>
                             <h6 class="mb-0 fw-bold">ELECTED OFFICIALS</h6>
 
@@ -44,7 +44,7 @@
                                     <span class="avatar-initial rounded bg-label-danger"><i
                                             class="ri-shield-user-line ri-24px"></i></span>
                                 </div>
-                                <h4 class="mb-0">{{$appointed}}</h4>
+                                <h4 class="mb-0">{{ $appointed }}</h4>
                             </div>
                             <h6 class="mb-0 fw-bold">APPOINTED OFFICIALS</h6>
 
@@ -59,16 +59,30 @@
                                     <span class="avatar-initial rounded bg-label-info"><i
                                             class="ri-hand-coin-line ri-24px"></i></span>
                                 </div>
-                                <h4 class="mb-0">{{$recent}}</h4>
+                                <h4 class="mb-0">{{ $recent }}</h4>
                             </div>
                             <h6 class="mb-0 fw-bold">TOTAL TUPAD APPLICANT</h6>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">TUPAD Workers Chart</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- / Content -->
-
+        @include('admin.partials.scripts.chart-scripts.chart')
         <div class="content-backdrop fade"></div>
     </div>
 @endsection

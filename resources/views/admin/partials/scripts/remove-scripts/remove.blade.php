@@ -9,7 +9,7 @@
 
                 swal({
                     title: "Are you sure?",
-                    text: "You won't be able to revert this!",
+                    text: "Removing this data will lose all the current record!",
                     icon: "warning",
                     buttons: {
                         cancel: {
