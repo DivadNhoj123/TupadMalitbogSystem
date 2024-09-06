@@ -9,30 +9,23 @@
                 <div class="col-md-12">
                     <div class="nav-align-top">
                         <ul class="nav nav-pills flex-column flex-md-row mb-6 gap-2 gap-lg-0" role="tablist">
-                            <li class="nav-item mb-1 mb-sm-0" role="presentation">
-                                <button type="button" class="nav-link waves-effect waves-light active" role="tab"
-                                    data-bs-toggle="tab" data-bs-target="#navs-pills-justified-home"
-                                    aria-controls="navs-pills-justified-home" aria-selected="true">
-                                    <i class="tf-icons ri-group-line me-1_5"></i> Account
-                                </button>
-                            </li>
-                            <li class="nav-item mb-1 mb-sm-0" role="presentation">
-                                <button type="button" class="nav-link waves-effect waves-light" role="tab"
-                                    data-bs-toggle="tab" data-bs-target="#navs-pills-justified-profile"
-                                    aria-controls="navs-pills-justified-profile" aria-selected="false" tabindex="-1">
-                                    <i class="tf-icons ri-settings-line me-1_5"></i> System
-                                </button>
-                            </li>
                             <li class="nav-item" role="presentation">
-                                <button type="button" class="nav-link waves-effect waves-light" role="tab"
+                                <button type="button" class="nav-link waves-effect waves-light active" role="tab"
                                     data-bs-toggle="tab" data-bs-target="#navs-pills-justified-messages"
                                     aria-controls="navs-pills-justified-messages" aria-selected="false" tabindex="-1">
                                     <i class="tf-icons ri-database-2-line me-1_5"></i> Clean Database
                                 </button>
                             </li>
+                            <li class="nav-item mb-1 mb-sm-0" role="presentation">
+                                <button type="button" class="nav-link waves-effect waves-light" role="tab"
+                                    data-bs-toggle="tab" data-bs-target="#navs-pills-justified-home"
+                                    aria-controls="navs-pills-justified-home" aria-selected="true">
+                                    <i class="tf-icons ri-group-line me-1_5"></i> My Account
+                                </button>
+                            </li>
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane fade active show" id="navs-pills-justified-home" role="tabpanel">
+                            <div class="tab-pane fade" id="navs-pills-justified-home" role="tabpanel">
                                 <!-- Account -->
                                 <div class="card-body">
                                     <div class="d-flex align-items-start align-items-sm-center gap-6">
@@ -93,10 +86,7 @@
                                 </div>
                                 <!-- /Account -->
                             </div>
-                            <div class="tab-pane fade" id="navs-pills-justified-profile" role="tabpanel">
-
-                            </div>
-                            <div class="tab-pane fade" id="navs-pills-justified-messages" role="tabpanel">
+                            <div class="tab-pane fade active show" id="navs-pills-justified-messages" role="tabpanel">
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-4 mb-6">
                                         <div class="card card-border-shadow-primary h-100">
